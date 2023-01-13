@@ -8,7 +8,8 @@ import LoginPage from "./pages/LoginPage/LoginPage";
 import NavBar from "./components/Navbar/Navbar";
 import IsPrivate from "./components/IsPrivate/IsPrivate";
 import IsAnon from "./components/IsAnon/IsAnon";
-
+import "swiper/css/bundle";
+import '../src/pages/HomePage/HomePage.css'
 function App() {
   return (
     <div className="App">

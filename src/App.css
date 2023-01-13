@@ -46,10 +46,10 @@
 		align-items: center;
 		text-align: justify;
 		margin-top: 1rem;
-		background-color: rgba(0, 0, 0, 0.7);
+		/* background-color: rgba(0, 0, 0, 0.7); */
 		width: 90%;
 		margin-left: 5%;
-		color: white;
+		/* color: white; */
 	}
 	
 	.subtitle{
@@ -68,6 +68,8 @@
 	.title{
 		font-weight: 800;
 		font-size: 250%;
+		width: 80%;
+		margin-right: 10%;
 	}
 
 	.title1{
@@ -75,8 +77,9 @@
 		font-size: 220%;
 		width: 70%;
 		margin-right: 15%;
+	}	
+
+	.margin-bottom{
+		margin-bottom: 10rem;
 	}
-	
-	
-	
 }

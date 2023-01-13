@@ -1,9 +1,22 @@
 import "./HomePage.css";
 import Carousel from 'react-bootstrap/Carousel';
+import React, { useRef, useState } from "react";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/pagination";
+import { FreeMode, Pagination } from "swiper";
+import { EffectFlip, Navigation } from "swiper";
+
+
 
 function HomePage() {
+	// style={{backgroundImage:'url(images/gif.gif)'}}
   return (
-    <div style={{backgroundImage:'url(images/gif.gif)'}}>
+    <div >
 			<Carousel className="carrousel">
       <Carousel.Item interval={2000}>
         <img
@@ -49,6 +62,33 @@ function HomePage() {
 		</div>
 		<div className="container1">
 			<h1 className="title1">Proyectos</h1>
+			<Swiper
+        effect={"flip"}
+        grabCursor={true}
+        pagination={true}
+        navigation={true}
+        modules={[EffectFlip, Pagination, Navigation]}
+        className="mySwiper margin-bottom"
+      >
+        <SwiperSlide>
+          <img src="https://pbs.twimg.com/media/EUE0wEuWsAYyr5X?format=jpg&name=small" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://pbs.twimg.com/media/ESSZ0uiUEAA55UH?format=jpg&name=900x900" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://pbs.twimg.com/media/ESSY58BUMAA2PNv?format=jpg&name=900x900" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://pbs.twimg.com/media/EQLw6WvVAAA9ClI?format=jpg&name=small" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://pbs.twimg.com/media/EF4jOJYXkAM6n1F?format=jpg&name=small" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://pbs.twimg.com/media/EBzdTutX4AAdnA6?format=jpg&name=small" />
+        </SwiperSlide>
+      </Swiper>
 		</div>
     </div>
   );

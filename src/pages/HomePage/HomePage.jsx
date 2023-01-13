@@ -3,7 +3,7 @@ import "./HomePage.css";
 function HomePage() {
   return (
     <div>
-      <h1>Home page</h1>
+      {/* <img className="homepage-img" src="images/parque1.jpg" alt="" /> */}
     </div>
   );
 }

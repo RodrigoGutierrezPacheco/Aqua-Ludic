@@ -8,7 +8,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
-import { FreeMode, Pagination } from "swiper";
+import { FreeMode,EffectCoverflow, Pagination } from "swiper";
 import { EffectFlip, Navigation } from "swiper";
 
 
@@ -62,31 +62,51 @@ function HomePage() {
 		</div>
 		<div className="container1">
 			<h1 className="title1">Proyectos</h1>
-			<Swiper
-        effect={"flip"}
+		
+		</div>
+		<div className="container2">
+		<Swiper
+        effect={"coverflow"}
         grabCursor={true}
+        centeredSlides={true}
+        slidesPerView={"auto"}
+        coverflowEffect={{
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        }}
         pagination={true}
-        navigation={true}
-        modules={[EffectFlip, Pagination, Navigation]}
-        className="mySwiper margin-bottom"
+        modules={[EffectCoverflow, Pagination]}
+        className="mySwiper"
       >
         <SwiperSlide>
-          <img src="https://pbs.twimg.com/media/EUE0wEuWsAYyr5X?format=jpg&name=small" />
+          <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://pbs.twimg.com/media/ESSZ0uiUEAA55UH?format=jpg&name=900x900" />
+          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://pbs.twimg.com/media/ESSY58BUMAA2PNv?format=jpg&name=900x900" />
+          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://pbs.twimg.com/media/EQLw6WvVAAA9ClI?format=jpg&name=small" />
+          <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://pbs.twimg.com/media/EF4jOJYXkAM6n1F?format=jpg&name=small" />
+          <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="https://pbs.twimg.com/media/EBzdTutX4AAdnA6?format=jpg&name=small" />
+          <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
         </SwiperSlide>
       </Swiper>
 		</div>

@@ -14,7 +14,7 @@ import { EffectFlip, Navigation } from "swiper";
 
 function HomePage() {
   return (
-    <div 	style={{backgroundImage:'url(images/fondo-gif1.gif)',borderTop:'-%'}}
+    <div 	style={{backgroundImage:'url(images/fondo-gif3.gif)',borderTop:'-%'}}
 		>
 			{/* <video className="video" src="images/video-fondo.mp4" autoPlay loop muted/> */}
 			<Carousel className="carrousel">

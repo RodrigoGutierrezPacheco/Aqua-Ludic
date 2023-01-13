@@ -13,12 +13,12 @@ function NavBar() {
   return (
     <>
       {['xxl'].map((expand) => (
-				<motion.div style={{backgroundImage:'url(images/fondo-gif1.gif'}} whileTap={{color:'black'}} >
+				<motion.div style={{backgroundImage:'url(images/fondo-gif3.gif'}} whileTap={{color:'black'}} >
         <Navbar key={expand} className='navbar'  expand={expand}  className="mb-3">
           <Container fluid>
             <motion.a transition={{duration:1}} initial={{scale:1.2}} animate={{scale:1,rotate:360}} whileHover={{scale:1.1,fontWeight:2000,borderBottom:'5px solid white',borderTop:'5px solid white'}} whileTap={{scale:0.7}}><Navbar.Brand href="/"><motion.a whileHover={{scale:2,color:'white',rotate:25,marginBottom:'5px solid white'}} whileTap={{scale:3,transition:{duration:1}}}><motion.img className='navbar-logo' src='images/logo-blanco.webp'/></motion.a></Navbar.Brand></motion.a>
             <Navbar.Toggle style={{backgroundColor:'white'}} aria-controls={`offcanvasNavbar-expand-${expand}`} />
-            <Navbar.Offcanvas style={{backgroundColor:'black',margin:'2px solid white'}}
+            <Navbar.Offcanvas style={{backgroundColor:'rgba(0, 0, 0,0.8)',margin:'2px solid white'}}
               id={`offcanvasNavbar-expand-${expand}`}
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
               placement="end"

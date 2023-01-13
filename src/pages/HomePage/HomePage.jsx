@@ -3,7 +3,7 @@ import Carousel from 'react-bootstrap/Carousel';
 
 function HomePage() {
   return (
-    <div>
+    <div style={{backgroundImage:'url(images/gif.gif)'}}>
 			<Carousel className="carrousel">
       <Carousel.Item interval={2000}>
         <img

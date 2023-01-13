@@ -8,7 +8,7 @@
 }
 
 
-@media(max-width:320px){
+@media(max-width:426px){
 	.navbar-logo{
 		margin-left: -40%;
 	}
@@ -46,6 +46,10 @@
 		align-items: center;
 		text-align: justify;
 		margin-top: 1rem;
+		background-color: rgba(0, 0, 0, 0.7);
+		width: 90%;
+		margin-left: 5%;
+		color: white;
 	}
 	
 	.subtitle{

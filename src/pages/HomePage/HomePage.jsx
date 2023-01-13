@@ -11,6 +11,9 @@ import "swiper/css/pagination";
 import { FreeMode,EffectCoverflow, Pagination } from "swiper";
 import { EffectFlip, Navigation } from "swiper";
 
+import Button from 'react-bootstrap/Button';
+import { MotionConfig } from "framer-motion";
+import { motion } from "framer-motion";
 
 function HomePage() {
   return (
@@ -55,16 +58,17 @@ function HomePage() {
       </Carousel.Item>
     </Carousel>
 		<div className="margin-top container1">
-			<h1 className="title">WATERSLIDES</h1>
+			<h1 className="title">El agua nos impulsa</h1>
 			<h2 className="subtitle">Mas innovadores y seguros.</h2>
 			<p className="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, ipsum porro laudantium animi repellat dolorum corporis nulla blanditiis, delectus quos quasi, nesciunt distinctio totam nostrum nisi consequatur quod fugit eveniet?</p>
-			<p className="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. In eligendi perspiciatis exercitationem nisi ipsam atque illum, sunt harum consequatur assumenda ex dolores unde laborum deserunt consectetur dicta porro minima rerum.</p>
+			<motion.button className="button1" style={{border:'none',backgroundColor:'transparent'}} whileTap={{scale:0.9}} whileHover={{scale:1.1}}><Button href="/nosotros" style={{border:'3px solid blue', borderRadius:'2rem', color:'blue'}} variant="outline-primary button1 ">Mas sobre Nosotros</Button></motion.button>
 		</div>
-		<div className="container1">
-			<h1 className="title1">Proyectos</h1>
-		
+		<div className="container3">
+			<h1 className="title2">Proyectos</h1>
+			<motion.button className="button2" style={{border:'none',backgroundColor:'transparent'}} whileTap={{scale:0.9}} whileHover={{scale:1.1}}><Button href="/proyectos" style={{border:'3px solid blue', borderRadius:'2rem', color:'white',backgroundColor:'blue'}} variant="outline-primary button2">Ver Proyectos</Button></motion.button>
+
 		</div>
-		<div className="container2">
+		<div className="container3">
 		<Swiper
         effect={"coverflow"}
         grabCursor={true}

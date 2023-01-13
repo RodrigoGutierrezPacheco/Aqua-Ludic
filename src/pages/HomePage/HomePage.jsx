@@ -12,11 +12,11 @@ import { FreeMode,EffectCoverflow, Pagination } from "swiper";
 import { EffectFlip, Navigation } from "swiper";
 
 
-
 function HomePage() {
-	// style={{backgroundImage:'url(images/gif.gif)'}}
   return (
-    <div >
+    <div 	style={{backgroundImage:'url(images/fondo-gif1.gif)',borderTop:'-%'}}
+		>
+			{/* <video className="video" src="images/video-fondo.mp4" autoPlay loop muted/> */}
 			<Carousel className="carrousel">
       <Carousel.Item interval={2000}>
         <img
@@ -109,6 +109,8 @@ function HomePage() {
           <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
         </SwiperSlide>
       </Swiper>
+		</div>
+		<div>
 		</div>
     </div>
   );

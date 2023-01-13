@@ -28,7 +28,7 @@ function NavBar() {
                   Menú
                 </Offcanvas.Title>
               </Offcanvas.Header>
-              <Offcanvas.Body>
+              <Offcanvas.Body className='flex'>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
 								<motion.a className='navbar-text' whileTap={{scale:0.7,href:'/'}} whileHover={{scale:1.3,color:'white',fontWeight:2000,borderBottom:'4px solid white',textAlign:'center'}}><Nav.Link href="/"><motion.a whileHover={{color:'white'}} style={{color:'white'}} href='/' className='navbar-text'>Inicio</motion.a></Nav.Link></motion.a>
 								<motion.a className='navbar-text' whileTap={{scale:0.7,href:'/'}} whileHover={{scale:1.3,color:'white',fontWeight:2000,borderBottom:'4px solid white',textAlign:'center'}}><Nav.Link href="/"><motion.a whileHover={{color:'white'}} style={{color:'white'}} href='/' className='navbar-text'>Nosotros</motion.a></Nav.Link></motion.a>
